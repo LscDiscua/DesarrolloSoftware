@@ -52,6 +52,7 @@
     <Compile Include="Categoria.Designer.cs">
       <DependentUpon>Categoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="Clases\Clase_compras.cs" />
     <Compile Include="Compras.cs">
       <SubType>Form</SubType>
     </Compile>
