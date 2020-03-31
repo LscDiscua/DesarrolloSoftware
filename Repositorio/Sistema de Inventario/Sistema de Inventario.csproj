@@ -75,6 +75,9 @@
       <DependentUpon>Categoria.cs</DependentUpon>
     </Compile>
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
     <Compile Include="Clases\ClaCategoria.cs" />
     <Compile Include="Clases\ClaCompra.cs" />
     <Compile Include="Clases\ClaConexion.cs" />
@@ -88,9 +91,12 @@
     <Compile Include="Clases\ClaProducto.cs" />
     <Compile Include="Clases\ClaProveedor.cs" />
     <Compile Include="Clases\ClaVenta.cs" />
+<<<<<<< HEAD
+=======
 =======
     <Compile Include="Clases\Clase_compras.cs" />
 >>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
     <Compile Include="Compras.cs">
       <SubType>Form</SubType>
     </Compile>

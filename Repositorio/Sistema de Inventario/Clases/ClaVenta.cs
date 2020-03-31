@@ -64,7 +64,10 @@ namespace Sistema_de_Inventario.Clases
             numeroFactura = Factura;
             fecha = Fecha;
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
             conexion = new ClaConexion();
         }
 
@@ -162,7 +165,13 @@ namespace Sistema_de_Inventario.Clases
 
         public Boolean Guardar()
         {
+<<<<<<< HEAD
+            
+            //MessageBox.Show(DateTime.Now.ToString("dd/MM/yyyy"));
+            if (conexion.IUD(string.Format("INSERT INTO encabezadoventa (cliente) value('{0}')",0)))
+=======
             if (conexion.IUD(string.Format("INSERT INTO encabezadoventa ( cliente, fecha ) value('{0}','{1}')", Cliente, Fecha)))
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
             {
                 return true;
             }

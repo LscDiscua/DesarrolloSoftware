@@ -34,6 +34,7 @@ namespace Sistema_de_Inventario
 
             producto = new Clases.ClaProducto();
             compra = new ClaCompra();
+<<<<<<< HEAD
         }
 
         private void Compras_Load(object sender, EventArgs e)
@@ -68,6 +69,42 @@ namespace Sistema_de_Inventario
 
         }
 
+=======
+        }
+
+        private void Compras_Load(object sender, EventArgs e)
+        {
+            DataTable t1 = productos.SQL(String.Format("SELECT idProducto, nombre, categoria, marca, año, proveedor FROM taller.producto"));
+            dataGridView2.DataSource = null;
+            dataGridView2.DataSource = t1;
+            dataGridView2.Refresh();
+
+            /*DataTable t2 = compras.SQL(String.Format("SELECT e.numeroFactura, e.proveedor, e.fecha, e.facturaProveedor, d.idDetalleCompra , " +
+                "d.encabezadoCompra, d.producto, d.cantidad, d.precio, d.impuesto,d.subTotal, d.total FROM taller.encabezadoCompra " +
+                "As e INNER JOIN taller.detalleCompra AS d ON e.numeroFactura = d.encabezadoCompra"));
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = t2;
+            dataGridView1.Refresh();*/
+
+            DataTable t2 = compras.SQL(String.Format("SELECT e.numeroFactura, e.proveedor, e.fecha, e.facturaProveedor , " +
+                " d.producto, d.cantidad, d.precio, d.impuesto,d.subTotal, d.total FROM taller.encabezadoCompra " +
+                "As e INNER JOIN taller.detalleCompra AS d ON e.numeroFactura = d.encabezadoCompra"));
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = t2;
+            dataGridView1.Refresh();
+
+            DataTable t3 = proveedores.SQL(String.Format("SELECT idProveedor, RTNProveedor, nombre, telefono, " +
+                "direccion, correoElectronico FROM taller.proveedor"));
+
+            cbxProveedor.DataSource = null;
+            cbxProveedor.DataSource = t3;
+            cbxProveedor.DisplayMember = "nombre";
+            cbxProveedor.ValueMember = "idProveedor";
+            cbxProveedor.Refresh();
+
+        }
+
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
 
         private void Cargar_Datos()
         {
@@ -249,11 +286,14 @@ namespace Sistema_de_Inventario
             to = (im + su);
             txtTotal.Text = to.ToString();
         }
+<<<<<<< HEAD
+=======
 
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
     }
 }
 

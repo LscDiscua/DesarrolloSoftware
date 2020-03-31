@@ -38,22 +38,32 @@
 <<<<<<< HEAD
             this.txtDescripcion = new System.Windows.Forms.TextBox();
 =======
+<<<<<<< HEAD
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+=======
             this.textBox6 = new System.Windows.Forms.TextBox();
 >>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
             this.txtNombreCategoria = new System.Windows.Forms.TextBox();
             this.lbIdCategoria = new System.Windows.Forms.Label();
             this.txtIdCategoria = new System.Windows.Forms.TextBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+<<<<<<< HEAD
+=======
 =======
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
 >>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -121,8 +131,12 @@
 <<<<<<< HEAD
             this.panel5.Controls.Add(this.txtDescripcion);
 =======
+<<<<<<< HEAD
+            this.panel5.Controls.Add(this.txtDescripcion);
+=======
             this.panel5.Controls.Add(this.textBox6);
 >>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
             this.panel5.Controls.Add(this.pictureBox7);
             this.panel5.Controls.Add(this.pictureBox6);
             this.panel5.Controls.Add(this.pictureBox5);
@@ -132,10 +146,16 @@
             this.panel5.Controls.Add(this.lbIdCategoria);
             this.panel5.Controls.Add(this.txtIdCategoria);
 =======
+<<<<<<< HEAD
+            this.panel5.Controls.Add(this.txtNombreCategoria);
+            this.panel5.Controls.Add(this.lbIdCategoria);
+            this.panel5.Controls.Add(this.txtIdCategoria);
+=======
             this.panel5.Controls.Add(this.textBox7);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.textBox8);
 >>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
             this.panel5.Location = new System.Drawing.Point(663, 148);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(470, 442);
@@ -152,6 +172,9 @@
             this.label8.Name = "label8";
 <<<<<<< HEAD
             this.label8.Size = new System.Drawing.Size(114, 22);
+=======
+<<<<<<< HEAD
+            this.label8.Size = new System.Drawing.Size(114, 22);
             this.label8.TabIndex = 40;
             this.label8.Text = "Descripcion :";
             // 
@@ -165,11 +188,20 @@
             this.txtDescripcion.TabIndex = 39;
 =======
             this.label8.Size = new System.Drawing.Size(115, 26);
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
             this.label8.TabIndex = 40;
-            this.label8.Text = "Dirección :";
+            this.label8.Text = "Descripcion :";
             // 
-            // textBox6
+            // txtDescripcion
             // 
+<<<<<<< HEAD
+            this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripcion.Location = new System.Drawing.Point(142, 160);
+            this.txtDescripcion.Multiline = true;
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(287, 152);
+            this.txtDescripcion.TabIndex = 39;
+=======
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.Location = new System.Drawing.Point(142, 160);
             this.textBox6.Multiline = true;
@@ -177,6 +209,7 @@
             this.textBox6.Size = new System.Drawing.Size(287, 152);
             this.textBox6.TabIndex = 39;
 >>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
             // 
             // pictureBox7
             // 
@@ -200,7 +233,11 @@
 <<<<<<< HEAD
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
 =======
+<<<<<<< HEAD
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+=======
 >>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
             // 
             // pictureBox5
             // 
@@ -214,7 +251,11 @@
 <<<<<<< HEAD
             this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
 =======
+<<<<<<< HEAD
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+=======
 >>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
             // 
             // label4
             // 
@@ -222,6 +263,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(34, 112);
             this.label4.Name = "label4";
+<<<<<<< HEAD
+            this.label4.Size = new System.Drawing.Size(83, 22);
+=======
 <<<<<<< HEAD
             this.label4.Size = new System.Drawing.Size(83, 22);
             this.label4.TabIndex = 17;
@@ -254,35 +298,44 @@
             this.txtIdCategoria.TabIndex = 14;
 =======
             this.label4.Size = new System.Drawing.Size(102, 26);
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
             this.label4.TabIndex = 17;
             this.label4.Text = "Nombre :";
             // 
-            // textBox7
+            // txtNombreCategoria
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(142, 110);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(287, 30);
-            this.textBox7.TabIndex = 16;
+            this.txtNombreCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreCategoria.Location = new System.Drawing.Point(142, 110);
+            this.txtNombreCategoria.Name = "txtNombreCategoria";
+            this.txtNombreCategoria.Size = new System.Drawing.Size(287, 26);
+            this.txtNombreCategoria.TabIndex = 16;
             // 
-            // label3
+            // lbIdCategoria
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(176, 27);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(134, 26);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "ID Categoría";
+            this.lbIdCategoria.AutoSize = true;
+            this.lbIdCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbIdCategoria.Location = new System.Drawing.Point(176, 27);
+            this.lbIdCategoria.Name = "lbIdCategoria";
+            this.lbIdCategoria.Size = new System.Drawing.Size(110, 22);
+            this.lbIdCategoria.TabIndex = 15;
+            this.lbIdCategoria.Text = "ID Categoría";
             // 
-            // textBox8
+            // txtIdCategoria
             // 
+<<<<<<< HEAD
+            this.txtIdCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdCategoria.Location = new System.Drawing.Point(39, 56);
+            this.txtIdCategoria.Name = "txtIdCategoria";
+            this.txtIdCategoria.Size = new System.Drawing.Size(390, 26);
+            this.txtIdCategoria.TabIndex = 14;
+=======
             this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox8.Location = new System.Drawing.Point(39, 56);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(390, 30);
             this.textBox8.TabIndex = 14;
 >>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
             // 
             // Categoria
             // 
@@ -327,21 +380,31 @@
 <<<<<<< HEAD
         private System.Windows.Forms.TextBox txtDescripcion;
 =======
+<<<<<<< HEAD
+        private System.Windows.Forms.TextBox txtDescripcion;
+=======
         private System.Windows.Forms.TextBox textBox6;
 >>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label4;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
         private System.Windows.Forms.TextBox txtNombreCategoria;
         private System.Windows.Forms.Label lbIdCategoria;
         private System.Windows.Forms.TextBox txtIdCategoria;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+<<<<<<< HEAD
+=======
 =======
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox8;
 >>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
     }
 }

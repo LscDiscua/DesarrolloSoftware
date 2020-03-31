@@ -61,12 +61,21 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1168, 760);
 =======
+<<<<<<< HEAD
+            this.dataGridView1.Location = new System.Drawing.Point(-3, 122);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1168, 760);
+=======
             this.dataGridView1.Location = new System.Drawing.Point(-4, 150);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1558, 936);
 >>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
             this.dataGridView1.TabIndex = 0;
             // 
             // textBox1
@@ -110,8 +119,13 @@
             this.pictureBox2.Location = new System.Drawing.Point(16, 28);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
 =======
+<<<<<<< HEAD
+            this.pictureBox2.Location = new System.Drawing.Point(16, 28);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+=======
             this.pictureBox2.Location = new System.Drawing.Point(21, 35);
 >>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(382, 94);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -129,12 +143,21 @@
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(990, 496);
 =======
+<<<<<<< HEAD
+            this.dataGridView2.Location = new System.Drawing.Point(9, 138);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(990, 496);
+=======
             this.dataGridView2.Location = new System.Drawing.Point(12, 170);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(1320, 611);
 >>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
             this.dataGridView2.TabIndex = 8;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
@@ -154,10 +177,18 @@
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
 =======
+<<<<<<< HEAD
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1008, 24);
+            this.menuStrip1.TabIndex = 9;
+            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
+=======
             this.menuStrip1.Size = new System.Drawing.Size(1344, 28);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
 >>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
             // 
             // agregarProductoToolStripMenuItem
             // 
@@ -167,9 +198,15 @@
             this.agregarProductoToolStripMenuItem.Text = "Agregar Producto";
             this.agregarProductoToolStripMenuItem.Click += new System.EventHandler(this.agregarProductoToolStripMenuItem_Click);
 =======
+<<<<<<< HEAD
+            this.agregarProductoToolStripMenuItem.Size = new System.Drawing.Size(113, 20);
+            this.agregarProductoToolStripMenuItem.Text = "Agregar Producto";
+            this.agregarProductoToolStripMenuItem.Click += new System.EventHandler(this.agregarProductoToolStripMenuItem_Click);
+=======
             this.agregarProductoToolStripMenuItem.Size = new System.Drawing.Size(141, 24);
             this.agregarProductoToolStripMenuItem.Text = "Agregar Producto";
 >>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
             // 
             // agregarProveedorToolStripMenuItem
             // 
@@ -179,9 +216,15 @@
             this.agregarProveedorToolStripMenuItem.Text = "Agregar Proveedor";
             this.agregarProveedorToolStripMenuItem.Click += new System.EventHandler(this.agregarProveedorToolStripMenuItem_Click);
 =======
+<<<<<<< HEAD
+            this.agregarProveedorToolStripMenuItem.Size = new System.Drawing.Size(118, 20);
+            this.agregarProveedorToolStripMenuItem.Text = "Agregar Proveedor";
+            this.agregarProveedorToolStripMenuItem.Click += new System.EventHandler(this.agregarProveedorToolStripMenuItem_Click);
+=======
             this.agregarProveedorToolStripMenuItem.Size = new System.Drawing.Size(149, 24);
             this.agregarProveedorToolStripMenuItem.Text = "Agregar Proveedor";
 >>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
             // 
             // agregarCategoríaToolStripMenuItem
             // 
@@ -191,9 +234,15 @@
             this.agregarCategoríaToolStripMenuItem.Text = "Agregar Categoría";
             this.agregarCategoríaToolStripMenuItem.Click += new System.EventHandler(this.agregarCategoríaToolStripMenuItem_Click);
 =======
+<<<<<<< HEAD
+            this.agregarCategoríaToolStripMenuItem.Size = new System.Drawing.Size(115, 20);
+            this.agregarCategoríaToolStripMenuItem.Text = "Agregar Categoría";
+            this.agregarCategoríaToolStripMenuItem.Click += new System.EventHandler(this.agregarCategoríaToolStripMenuItem_Click);
+=======
             this.agregarCategoríaToolStripMenuItem.Size = new System.Drawing.Size(146, 24);
             this.agregarCategoríaToolStripMenuItem.Text = "Agregar Categoría";
 >>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
             // 
             // Inventario
             // 
@@ -203,8 +252,12 @@
 <<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1008, 644);
 =======
+<<<<<<< HEAD
+            this.ClientSize = new System.Drawing.Size(1008, 644);
+=======
             this.ClientSize = new System.Drawing.Size(1344, 793);
 >>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
@@ -217,7 +270,11 @@
 <<<<<<< HEAD
             this.Margin = new System.Windows.Forms.Padding(2);
 =======
+<<<<<<< HEAD
+            this.Margin = new System.Windows.Forms.Padding(2);
+=======
 >>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
             this.Name = "Inventario";
             this.Load += new System.EventHandler(this.Inventario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

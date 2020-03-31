@@ -115,3 +115,15 @@ C:\Users\linda\Documents\PROYECTOS I PERIODO 2020\Proyecto Desarrollo\Sistema de
 C:\Users\linda\Documents\PROYECTOS I PERIODO 2020\Proyecto Desarrollo\Sistema de Inventario\obj\Debug\Sistema de Inventario.csproj.CopyComplete
 C:\Users\linda\Documents\PROYECTOS I PERIODO 2020\Proyecto Desarrollo\Sistema de Inventario\obj\Debug\Sistema de Inventario.exe
 C:\Users\linda\Documents\PROYECTOS I PERIODO 2020\Proyecto Desarrollo\Sistema de Inventario\obj\Debug\Sistema de Inventario.pdb
+<<<<<<< HEAD
+C:\Users\Eliab Evora\Desktop\DesarrolloP\DesarrolloSoftware\Repositorio\Sistema de Inventario\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Eliab Evora\Desktop\DesarrolloP\DesarrolloSoftware\Repositorio\Sistema de Inventario\bin\Debug\Google.Protobuf.dll
+C:\Users\Eliab Evora\Desktop\DesarrolloP\DesarrolloSoftware\Repositorio\Sistema de Inventario\bin\Debug\MySql.Data.dll
+C:\Users\Eliab Evora\Desktop\DesarrolloP\DesarrolloSoftware\Repositorio\Sistema de Inventario\bin\Debug\Renci.SshNet.dll
+C:\Users\Eliab Evora\Desktop\DesarrolloP\DesarrolloSoftware\Repositorio\Sistema de Inventario\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Eliab Evora\Desktop\DesarrolloP\DesarrolloSoftware\Repositorio\Sistema de Inventario\bin\Debug\Google.Protobuf.xml
+C:\Users\Eliab Evora\Desktop\DesarrolloP\DesarrolloSoftware\Repositorio\Sistema de Inventario\bin\Debug\MySql.Data.xml
+C:\Users\Eliab Evora\Desktop\DesarrolloP\DesarrolloSoftware\Repositorio\Sistema de Inventario\bin\Debug\Renci.SshNet.xml
+C:\Users\Eliab Evora\Desktop\DesarrolloP\DesarrolloSoftware\Repositorio\Sistema de Inventario\obj\Debug\Sistema de Inventario.csproj.CopyComplete
+=======
+>>>>>>> ccce27706f76fc7a24fb1887121e854a9f325335
