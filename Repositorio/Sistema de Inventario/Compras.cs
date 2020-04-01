@@ -50,9 +50,12 @@ namespace Sistema_de_Inventario
             dataGridView1.DataSource = t2;
             dataGridView1.Refresh();*/
 
-            DataTable t2 = compras.SQL(String.Format("SELECT e.numeroFactura, e.proveedor, e.fecha, e.facturaProveedor , " +
+
+
+            /*DataTable t2 = compras.SQL(String.Format("SELECT e.numeroFactura, e.proveedor, e.fecha, e.facturaProveedor , " +
                 " d.producto, d.cantidad, d.precio, d.impuesto,d.subTotal, d.total FROM taller.encabezadoCompra " +
-                "As e INNER JOIN taller.detalleCompra AS d ON e.numeroFactura = d.encabezadoCompra"));
+                "As e INNER JOIN taller.detalleCompra AS d ON e.numeroFactura = d.encabezadoCompra"));*/
+            DataTable t2 = compras.SQL(String.Format("SELECT * FROM taller.vistacompraproducto;"));
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = t2;
             dataGridView1.Refresh();
@@ -250,10 +253,7 @@ namespace Sistema_de_Inventario
             txtTotal.Text = to.ToString();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+        private void label1_Click(object sender, EventArgs e){}
     }
 }
 

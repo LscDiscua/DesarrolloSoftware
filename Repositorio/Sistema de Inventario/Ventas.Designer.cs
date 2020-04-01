@@ -37,7 +37,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-<<<<<<< HEAD
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -45,45 +44,25 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtBuscarProducto = new System.Windows.Forms.TextBox();
+            this.txtCliente = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtSubTotal = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtTotal = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-=======
->>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
+            this.txtImpuesto = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.txtProducto = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-<<<<<<< HEAD
             this.label11 = new System.Windows.Forms.Label();
-=======
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
->>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
+            this.dtpFechaVenta = new System.Windows.Forms.DateTimePicker();
+            this.lbFecha = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -93,9 +72,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -109,11 +85,7 @@
             this.label1.Location = new System.Drawing.Point(2, 95);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-<<<<<<< HEAD
             this.label1.Size = new System.Drawing.Size(955, 510);
-=======
-            this.label1.Size = new System.Drawing.Size(1273, 628);
->>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
             this.label1.TabIndex = 0;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -128,12 +100,9 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-<<<<<<< HEAD
             this.dataGridView1.Size = new System.Drawing.Size(938, 152);
-=======
-            this.dataGridView1.Size = new System.Drawing.Size(1250, 187);
->>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
             this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseDoubleClick);
             // 
             // pictureBox2
             // 
@@ -161,36 +130,22 @@
             // 
             // txtNumeroFactura
             // 
-<<<<<<< HEAD
             this.txtNumeroFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumeroFactura.Location = new System.Drawing.Point(179, 109);
             this.txtNumeroFactura.Margin = new System.Windows.Forms.Padding(2);
             this.txtNumeroFactura.Name = "txtNumeroFactura";
             this.txtNumeroFactura.Size = new System.Drawing.Size(141, 27);
             this.txtNumeroFactura.TabIndex = 12;
-=======
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(239, 134);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(187, 32);
-            this.textBox1.TabIndex = 12;
->>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.AliceBlue;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
             this.label2.Location = new System.Drawing.Point(14, 111);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(179, 22);
-=======
-            this.label2.Location = new System.Drawing.Point(19, 137);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(217, 26);
->>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
             this.label2.TabIndex = 11;
             this.label2.Text = "Numero de Factura : ";
             // 
@@ -199,27 +154,22 @@
             this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-<<<<<<< HEAD
             this.dataGridView2.Location = new System.Drawing.Point(457, 55);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(475, 237);
-=======
-            this.dataGridView2.Location = new System.Drawing.Point(596, 67);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(633, 292);
->>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
             this.dataGridView2.TabIndex = 13;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.groupBox1.Controls.Add(this.lbFecha);
+            this.groupBox1.Controls.Add(this.dtpFechaVenta);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.label6);
@@ -227,26 +177,25 @@
             this.groupBox1.Controls.Add(this.pictureBox6);
             this.groupBox1.Controls.Add(this.pictureBox7);
             this.groupBox1.Controls.Add(this.pictureBox5);
-            this.groupBox1.Controls.Add(this.textBox9);
-            this.groupBox1.Controls.Add(this.textBox8);
+            this.groupBox1.Controls.Add(this.txtBuscarProducto);
+            this.groupBox1.Controls.Add(this.txtCliente);
             this.groupBox1.Controls.Add(this.dataGridView2);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.txtSubTotal);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.txtTotal);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.txtImpuesto);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtCantidad);
+            this.groupBox1.Controls.Add(this.txtPrecio);
+            this.groupBox1.Controls.Add(this.txtProducto);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-<<<<<<< HEAD
             this.groupBox1.Location = new System.Drawing.Point(9, 297);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
@@ -331,28 +280,28 @@
             this.pictureBox5.TabIndex = 27;
             this.pictureBox5.TabStop = false;
             // 
-            // textBox9
+            // txtBuscarProducto
             // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(575, 24);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(306, 27);
-            this.textBox9.TabIndex = 17;
+            this.txtBuscarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscarProducto.Location = new System.Drawing.Point(575, 24);
+            this.txtBuscarProducto.Margin = new System.Windows.Forms.Padding(2);
+            this.txtBuscarProducto.Name = "txtBuscarProducto";
+            this.txtBuscarProducto.Size = new System.Drawing.Size(306, 27);
+            this.txtBuscarProducto.TabIndex = 17;
             // 
-            // textBox8
+            // txtCliente
             // 
-            this.textBox8.Location = new System.Drawing.Point(82, 66);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(341, 20);
-            this.textBox8.TabIndex = 25;
+            this.txtCliente.Location = new System.Drawing.Point(94, 89);
+            this.txtCliente.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.Size = new System.Drawing.Size(137, 20);
+            this.txtCliente.TabIndex = 25;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(22, 63);
+            this.label10.Location = new System.Drawing.Point(12, 89);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(66, 20);
@@ -370,13 +319,13 @@
             this.label9.TabIndex = 23;
             this.label9.Text = "Impuesto :";
             // 
-            // textBox7
+            // txtSubTotal
             // 
-            this.textBox7.Location = new System.Drawing.Point(82, 212);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(127, 20);
-            this.textBox7.TabIndex = 22;
+            this.txtSubTotal.Location = new System.Drawing.Point(90, 212);
+            this.txtSubTotal.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSubTotal.Name = "txtSubTotal";
+            this.txtSubTotal.Size = new System.Drawing.Size(127, 20);
+            this.txtSubTotal.TabIndex = 22;
             // 
             // label8
             // 
@@ -389,13 +338,13 @@
             this.label8.TabIndex = 21;
             this.label8.Text = "Subtotal :";
             // 
-            // textBox6
+            // txtTotal
             // 
-            this.textBox6.Location = new System.Drawing.Point(82, 240);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(127, 20);
-            this.textBox6.TabIndex = 20;
+            this.txtTotal.Location = new System.Drawing.Point(88, 240);
+            this.txtTotal.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(127, 20);
+            this.txtTotal.TabIndex = 20;
             // 
             // label7
             // 
@@ -408,13 +357,14 @@
             this.label7.TabIndex = 19;
             this.label7.Text = "Total :";
             // 
-            // textBox5
+            // txtImpuesto
             // 
-            this.textBox5.Location = new System.Drawing.Point(82, 182);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(127, 20);
-            this.textBox5.TabIndex = 18;
+            this.txtImpuesto.Location = new System.Drawing.Point(90, 183);
+            this.txtImpuesto.Margin = new System.Windows.Forms.Padding(2);
+            this.txtImpuesto.Name = "txtImpuesto";
+            this.txtImpuesto.Size = new System.Drawing.Size(127, 20);
+            this.txtImpuesto.TabIndex = 18;
+            this.txtImpuesto.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // label5
             // 
@@ -424,93 +374,53 @@
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 20);
-=======
-            this.groupBox1.Location = new System.Drawing.Point(12, 365);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1248, 369);
-            this.groupBox1.TabIndex = 15;
-            this.groupBox1.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(29, 181);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 25);
->>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
             this.label5.TabIndex = 17;
             this.label5.Text = "Precio :";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-<<<<<<< HEAD
             this.pictureBox1.Location = new System.Drawing.Point(244, 206);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(50, 52);
-=======
-            this.pictureBox1.Location = new System.Drawing.Point(326, 253);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(67, 64);
->>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // textBox2
+            // txtCantidad
             // 
-<<<<<<< HEAD
-            this.textBox2.Location = new System.Drawing.Point(82, 117);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-=======
-            this.textBox2.Location = new System.Drawing.Point(110, 144);
->>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(65, 20);
-            this.textBox2.TabIndex = 11;
+            this.txtCantidad.Location = new System.Drawing.Point(93, 117);
+            this.txtCantidad.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(65, 20);
+            this.txtCantidad.TabIndex = 11;
             // 
-            // textBox4
+            // txtPrecio
             // 
-<<<<<<< HEAD
-            this.textBox4.Location = new System.Drawing.Point(82, 150);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-=======
-            this.textBox4.Location = new System.Drawing.Point(110, 185);
->>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(65, 20);
-            this.textBox4.TabIndex = 13;
+            this.txtPrecio.Location = new System.Drawing.Point(93, 150);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(65, 20);
+            this.txtPrecio.TabIndex = 13;
             // 
-            // textBox3
+            // txtProducto
             // 
-<<<<<<< HEAD
-            this.textBox3.Location = new System.Drawing.Point(20, 43);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(403, 20);
-=======
-            this.textBox3.Location = new System.Drawing.Point(27, 53);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(536, 22);
->>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
-            this.textBox3.TabIndex = 12;
+            this.txtProducto.Location = new System.Drawing.Point(95, 59);
+            this.txtProducto.Margin = new System.Windows.Forms.Padding(2);
+            this.txtProducto.Name = "txtProducto";
+            this.txtProducto.Size = new System.Drawing.Size(195, 20);
+            this.txtProducto.TabIndex = 12;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
             this.label3.Location = new System.Drawing.Point(5, 115);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 20);
-=======
-            this.label3.Location = new System.Drawing.Point(7, 141);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 25);
->>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
             this.label3.TabIndex = 14;
             this.label3.Text = "Cantidad : ";
             // 
@@ -518,18 +428,13 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.label4.Location = new System.Drawing.Point(19, 20);
+            this.label4.Location = new System.Drawing.Point(5, 55);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-=======
-            this.label4.Location = new System.Drawing.Point(25, 25);
->>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(85, 20);
             this.label4.TabIndex = 16;
             this.label4.Text = "Producto : ";
             // 
-<<<<<<< HEAD
             // label11
             // 
             this.label11.AutoSize = true;
@@ -541,177 +446,33 @@
             this.label11.Size = new System.Drawing.Size(158, 22);
             this.label11.TabIndex = 16;
             this.label11.Text = "Buscar Producto : ";
-=======
-            // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(43, 292);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 25);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "Total :";
+            // dtpFechaVenta
             // 
-            // textBox5
+            this.dtpFechaVenta.Location = new System.Drawing.Point(96, 25);
+            this.dtpFechaVenta.Name = "dtpFechaVenta";
+            this.dtpFechaVenta.Size = new System.Drawing.Size(200, 20);
+            this.dtpFechaVenta.TabIndex = 16;
             // 
-            this.textBox5.Location = new System.Drawing.Point(110, 224);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(168, 22);
-            this.textBox5.TabIndex = 18;
+            // lbFecha
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(15, 257);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(95, 25);
-            this.label8.TabIndex = 21;
-            this.label8.Text = "Subtotal :";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(110, 296);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(168, 22);
-            this.textBox6.TabIndex = 20;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(7, 222);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(103, 25);
-            this.label9.TabIndex = 23;
-            this.label9.Text = "Impuesto :";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(110, 261);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(168, 22);
-            this.textBox7.TabIndex = 22;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(110, 81);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(453, 22);
-            this.textBox8.TabIndex = 25;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(29, 78);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(84, 25);
-            this.label10.TabIndex = 24;
-            this.label10.Text = "Cliente :";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(326, 185);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(67, 62);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 27;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(326, 109);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(67, 70);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 28;
-            this.pictureBox6.TabStop = false;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(767, 29);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(406, 32);
-            this.textBox9.TabIndex = 17;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Coral;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(583, 32);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(191, 26);
-            this.label11.TabIndex = 16;
-            this.label11.Text = "Buscar Producto : ";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(1186, 25);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(43, 36);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 29;
-            this.pictureBox7.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(299, 323);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(264, 27);
-            this.button1.TabIndex = 30;
-            this.button1.Text = "Terminar Venta";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(410, 141);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(143, 17);
-            this.label6.TabIndex = 31;
-            this.label6.Text = "Seleccionar Producto";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(408, 206);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(145, 17);
-            this.label12.TabIndex = 32;
-            this.label12.Text = "Eliminar de la Factura";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(408, 283);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(142, 17);
-            this.label13.TabIndex = 33;
-            this.label13.Text = "Agregar a  la Factura";
->>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
+            this.lbFecha.AutoSize = true;
+            this.lbFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFecha.Location = new System.Drawing.Point(6, 24);
+            this.lbFecha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbFecha.Name = "lbFecha";
+            this.lbFecha.Size = new System.Drawing.Size(66, 20);
+            this.lbFecha.TabIndex = 34;
+            this.lbFecha.Text = "Fecha : ";
             // 
             // Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Coral;
-<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(952, 606);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtNumeroFactura);
-=======
-            this.ClientSize = new System.Drawing.Size(1270, 746);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.textBox1);
->>>>>>> 11ebf43ead1d3071110b2570a1da13e372e6f85c
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.dataGridView1);
@@ -732,9 +493,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -754,25 +512,27 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtCantidad;
+        private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.TextBox txtProducto;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtCliente;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtSubTotal;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtImpuesto;
+        private System.Windows.Forms.TextBox txtBuscarProducto;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DateTimePicker dtpFechaVenta;
+        private System.Windows.Forms.Label lbFecha;
     }
 }

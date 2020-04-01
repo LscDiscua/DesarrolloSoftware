@@ -106,7 +106,18 @@ namespace Sistema_de_Inventario.Clases
             }
         }
 
-
+        public Boolean Eliminar()
+        {
+            if (conexion.IUD(string.Format("DELETE FROM taller.producto WHERE idProducto= {0}", IdProducto)))
+            {
+                return true;
+            }
+            else
+            {
+                error = conexion.Error;
+                return false;
+            }
+        }
         public Boolean BuscarProducto(string no)
         {
             DataTable t1 = conexion.consulta(string.Format("SELECT idProducto, nombre, categoria, marca, año, proveedor FROM taller.producto where nombre='{0}'", no));

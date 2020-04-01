@@ -160,6 +160,20 @@ namespace Sistema_de_Inventario.Clases
             set { value = fecha; }
         }
 
+
+
+        public Boolean IniciarEncabezado()
+        {
+            if (conexion.IUD(string.Format("INSERT INTO encabezadoventa ( cliente ) value('{0}')", 0)))
+            {
+                return true;
+            }
+            else
+            {
+                error = conexion.Error;
+                return false;
+            }
+        }
         public Boolean Guardar()
         {
             if (conexion.IUD(string.Format("INSERT INTO encabezadoventa ( cliente, fecha ) value('{0}','{1}')", Cliente, Fecha)))
@@ -175,7 +189,7 @@ namespace Sistema_de_Inventario.Clases
 
         public Boolean GuardarDetalle()
         {
-            if (conexion.IUD(string.Format("INSERT INTO detalleventa (encabezado, producto, cantidad,precio,impuesto,subtotal,total ) value('{0}','{1}','{2}','{3}','{4}','{5}','{6}')", Encabezado, IDProducto, Cantidad, Precio, Impuesto, Subtotal, Total)))
+            if (conexion.IUD(string.Format("INSERT INTO taller.detalleventa (encabezado, producto, cantidad,precio,impuesto,subtotal,total ) value('{0}','{1}','{2}','{3}','{4}','{5}','{6}')", Encabezado, IDProducto, Cantidad, Precio, Impuesto, Subtotal, Total)))
             {
                 return true;
             }

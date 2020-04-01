@@ -93,7 +93,7 @@ namespace Sistema_de_Inventario
             cbxProveedor.SelectedValue = producto.Proveedor;
             txtMarca.Text = producto.Marca;
             txtIdProducto.Focus();
-            SendKeys.Send("{Tab}");
+            //SendKeys.Send("{Tab}");
         }
         private void limpiar()
         {
@@ -101,7 +101,7 @@ namespace Sistema_de_Inventario
             txtNombreProducto.Text = "";
             txtAño.Text = "";
             txtMarca.Text = "";
-            //txtIdProducto.Enabled = true;
+            txtIdProducto.Enabled = true;
             txtIdProducto.Focus();
             cbxCategoria.Text= "";
             cbxProveedor.Text = "";
@@ -205,6 +205,7 @@ namespace Sistema_de_Inventario
                     MessageBox.Show(string.Format("Error\n{0}", producto.Error.ToString()), "Producto", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 limpiar();
+                txtIdProducto.Focus();
             }
         }
 
@@ -228,6 +229,10 @@ namespace Sistema_de_Inventario
             {
                 MessageBox.Show(string.Format("No existe el codigo del Producto\n{0}\t{1}", producto.IdProducto, producto.Nombre));
                 r = false;
+            }
+            else if (producto.Nombre== txtNombreProducto.Text)
+            {
+                MessageBox.Show(string.Format("Modificaste el producto \n{0}\t{1}", producto.IdProducto, producto.Nombre));
             }
 
             else if (producto.BuscarProducto(txtNombreProducto.Text))
@@ -255,6 +260,7 @@ namespace Sistema_de_Inventario
             return r;
         }
 
+
         private void dataGridView2_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             txtIdProducto.Enabled = false;
@@ -265,6 +271,48 @@ namespace Sistema_de_Inventario
             txtAño.Text = dataGridView2.CurrentRow.Cells[4].Value.ToString();
             cbxProveedor.SelectedValue = dataGridView2.CurrentRow.Cells[5].Value.ToString();
 
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            if (ValidarEliminar())
+            {
+                producto.IdProducto = (txtIdProducto.Text);
+                if (producto.Eliminar())
+                {
+                    MessageBox.Show("Registro eliminado correctamente", "Producto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DataTable t1 = productos.SQL(String.Format("SELECT idProducto, nombre, categoria, marca, año, proveedor FROM taller.producto"));
+                    dataGridView2.DataSource = null;
+                    dataGridView2.DataSource = t1;
+                    dataGridView2.Refresh();
+                    Cargar_Datos();
+                }
+                else
+                {
+                    MessageBox.Show(string.Format("Error\n{0}", producto.Error.ToString()), "producto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                limpiar();
+                txtIdProducto.Focus();
+            }
+        }
+
+        private Boolean ValidarEliminar()
+        {
+            Boolean r = true;
+            if (txtIdProducto.Text == "")
+            {
+                MessageBox.Show("Escriba el codigo del Producto", "Producto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtIdProducto.Focus();
+                r = false;
+            }
+            else if (!producto.BuscarIdProducto(txtIdProducto.Text))
+            {
+                MessageBox.Show(string.Format("No existe el codigo del departamento\n{0}\t{1}", producto.IdProducto, producto.Nombre));
+                r = false;
+            }
+            else
+                r = true;
+            return r;
         }
     }
 }
