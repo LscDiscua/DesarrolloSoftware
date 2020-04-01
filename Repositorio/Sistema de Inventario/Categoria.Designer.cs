@@ -128,9 +128,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(21, 162);
+            this.label8.Location = new System.Drawing.Point(3, 162);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(114, 22);
+            this.label8.Size = new System.Drawing.Size(138, 26);
             this.label8.TabIndex = 40;
             this.label8.Text = "Descripcion :";
             // 
@@ -181,7 +181,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(34, 112);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 22);
+            this.label4.Size = new System.Drawing.Size(102, 26);
             this.label4.TabIndex = 17;
             this.label4.Text = "Nombre :";
             // 
@@ -190,7 +190,7 @@
             this.txtNombreCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreCategoria.Location = new System.Drawing.Point(142, 110);
             this.txtNombreCategoria.Name = "txtNombreCategoria";
-            this.txtNombreCategoria.Size = new System.Drawing.Size(287, 26);
+            this.txtNombreCategoria.Size = new System.Drawing.Size(287, 30);
             this.txtNombreCategoria.TabIndex = 16;
             // 
             // lbIdCategoria
@@ -199,7 +199,7 @@
             this.lbIdCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbIdCategoria.Location = new System.Drawing.Point(176, 27);
             this.lbIdCategoria.Name = "lbIdCategoria";
-            this.lbIdCategoria.Size = new System.Drawing.Size(110, 22);
+            this.lbIdCategoria.Size = new System.Drawing.Size(134, 26);
             this.lbIdCategoria.TabIndex = 15;
             this.lbIdCategoria.Text = "ID Categoría";
             // 
@@ -208,7 +208,7 @@
             this.txtIdCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdCategoria.Location = new System.Drawing.Point(39, 56);
             this.txtIdCategoria.Name = "txtIdCategoria";
-            this.txtIdCategoria.Size = new System.Drawing.Size(390, 26);
+            this.txtIdCategoria.Size = new System.Drawing.Size(390, 30);
             this.txtIdCategoria.TabIndex = 14;
             // 
             // Categoria

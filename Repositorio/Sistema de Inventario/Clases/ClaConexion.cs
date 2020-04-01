@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Data;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Sistema_de_Inventario
 {
@@ -77,6 +78,84 @@ namespace Sistema_de_Inventario
             }
             return t;
         }
+
+        /*public DataTable ObtenerNumerodeFactura(string sql)
+        {
+            DataTable t = new DataTable();
+            conectar();
+            MySqlCommand comando = conexion.CreateCommand();
+            MySqlDataAdapter adptador = new MySqlDataAdapter();
+           
+            try
+            {
+                comando.Connection = conexion;
+                comando.CommandText = sql;
+                adptador.SelectCommand = comando;
+                //adptador.Fill(t);
+              
+                SqlCommand sqlCommand = new SqlCommand(sql );
+                using (SqlDataReader rdr = sqlCommand.ExecuteReader())
+                {
+                    while (rdr.Read())
+                    {
+                        
+                        Clases.ClaVenta venta = new Clases.ClaVenta();
+
+                        venta.Encabezado = Convert.ToInt32(rdr["numeroFactura"]);
+
+                    }
+                }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(string.Format("Error: \n{0}", ex.ToString()), "Conexión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return t;
+        }*/
+
+        public ClaConexion ObtenerNumerodeFactura()
+        {
+            ClaConexion numero = new ClaConexion();
+
+            try
+            {
+                // Query de selección
+                string sql = @"SELECT * FROM taller.encabezadoventa where numeroFactura = (select Max(numeroFactura) from taller.encabezadoventa";
+
+                // Abrir la conexión
+                conexion.Open();
+
+                // Establecer el comando SQL
+                MySqlCommand sqlCommand = new MySqlCommand(sql, conexion);
+
+                using (MySqlDataReader rdr = sqlCommand.ExecuteReader())
+                {
+                    while (rdr.Read())
+                    {
+                        Clases.ClaVenta venta = new Clases.ClaVenta();
+
+                        venta.Encabezado = Convert.ToInt32(rdr["numeroFactura"]);
+                    }
+                }
+                return numero;
+
+                /* Ventas ven = new Ventas();
+                 ven.txtfactura.Text = IdVenta.ToString();*/
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                // Cerrar la conexión
+                conexion.Close();
+            }
+
+        }
+
+
+
         public Boolean IUD(string sql)
         {
             conectar();

@@ -26,7 +26,8 @@ namespace Sistema_de_Inventario
             encabezadoVenta = new Clases.ClaVenta();
             encabezadoVenta.Guardar();
             //encabezadoVenta.Fecha = CFecha.Value;
-
+            txtEncabezadoVenta.Text = encabezadoVenta.Encabezado.ToString();
+            encabezadoVenta.MostarNumeroEncabezado();
         }
 
         private void Limpiar()

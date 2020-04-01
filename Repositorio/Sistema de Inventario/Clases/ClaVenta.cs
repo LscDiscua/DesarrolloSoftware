@@ -161,7 +161,7 @@ namespace Sistema_de_Inventario.Clases
 
         public Boolean Guardar()
         {
-            if (conexion.IUD(string.Format("INSERT INTO encabezadoventa ( cliente, fecha ) value('{0}','{1}')", Cliente, Fecha)))
+            if (conexion.IUD(string.Format("INSERT INTO encabezadoventa (cliente) value('{0}')", 0)))
             {
                 return true;
             }
@@ -227,6 +227,15 @@ namespace Sistema_de_Inventario.Clases
                 return false;
             }
         }
+
+        public void MostarNumeroEncabezado()
+        {
+            ClaConexion NumeroFactura = new ClaConexion();
+            // NumeroFactura.ObtenerNumerodeFactura(string.Format("SELECT * FROM taller.encabezadoventa where numeroFactura = (select Max(numeroFactura) from taller.encabezadoventa)"));
+            NumeroFactura.ObtenerNumerodeFactura();
+        }
+
+       
 
         public MySqlException Error
         {
