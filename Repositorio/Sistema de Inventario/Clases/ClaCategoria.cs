@@ -78,18 +78,6 @@ namespace Sistema_de_Inventario
             }
         }
 
-        public Boolean Eliminar()
-        {
-            if (conexion.IUD(string.Format("DELETE FROM taller.categoria WHERE idcategoria={0}", IdCategoria)))
-            {
-                return true;
-            }
-            else
-            {
-                error = conexion.Error;
-                return false;
-            }
-        }
         public Boolean BuscarIdCategoria(string id)
         {
             DataTable t1 = conexion.consulta(string.Format("SELECT idCategoria, nombre, descripcion FROM taller.categoria where idcategoria= '{0}'", id));

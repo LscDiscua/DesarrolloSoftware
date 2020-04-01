@@ -34,12 +34,10 @@ namespace Sistema_de_Inventario.Clases
                 I.IdInventario = f.Field<int>(0);
                 I.Producto = f.Field<string>(1);
                 I.Existencia = f.Field<int>(2);
-                I.Precio = f.Field<decimal>(3);
+                I.Precio = f.Field<int>(3);
                 inventario.Add(I);
             }
         }
-
-
         public List<ClaInventario> ListaInventario
         {
             get

@@ -198,18 +198,12 @@ namespace Sistema_de_Inventario
                 r = false;
             }
 
-            else if (categoria.Nombre == txtNombreCategoria.Text)
-            {
-                MessageBox.Show(string.Format("Modificaste la categoria \n{0}\t{1}", categoria.IdCategoria, categoria.Nombre));
-            }
-
             else if (categoria.BuscarCategoria(txtNombreCategoria.Text))
             {
                 MessageBox.Show(string.Format("Ya existe el nombre de la categoria \n{0}\t{1}", categoria.IdCategoria, categoria.Nombre));
 
                 r = false;
             }
-           
             /*else if (!categoria.BuscarCategoria(txtNombreCategoria.Text))
             {
                 if (MessageBox.Show(string.Format("Ya existe el nombre del categoria con este nombre\n{0}\t{1}\n¿Desea Continuar?", categoria.IdCategoria, categoria.Nombre), "Modificar Departamento", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
@@ -226,46 +220,6 @@ namespace Sistema_de_Inventario
             return r;
         }
 
-        private void pictureBox7_Click(object sender, EventArgs e)
-        {
-            if (ValidarEliminar())
-            {
-                categoria.IdCategoria = Convert.ToInt32(txtIdCategoria.Text);
-                if (categoria.Eliminar())
-                {
-                    MessageBox.Show("Registro eliminado correctamente", "Categoria", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    DataTable t1 = categorias.SQL(String.Format("SELECT idCategoria, nombre, descripcion FROM taller.categoria"));
-                    dataGridView2.DataSource = null;
-                    dataGridView2.DataSource = t1;
-                    dataGridView2.Refresh();
-                    Cargar_Datos();
-                }
-                else
-                {
-                    MessageBox.Show(string.Format("Error\n{0}", categoria.Error.ToString()), "Departamento", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                limpiar();
-            }
-        }
-
-        private Boolean ValidarEliminar()
-        {
-            Boolean r = true;
-            if (txtIdCategoria.Text == "")
-            {
-                MessageBox.Show("Escriba el codigo del departamento", "Departamento", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtIdCategoria.Focus();
-                r = false;
-            }
-            else if (!categoria.BuscarIdCategoria(txtIdCategoria.Text))
-            {
-                MessageBox.Show(string.Format("No existe el codigo del departamento\n{0}\t{1}", categoria.IdCategoria, categoria.Nombre));
-                r = false;
-            }
-            else
-                r = true;
-            return r;
-        }
         private void dataGridView2_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
 
@@ -287,8 +241,6 @@ namespace Sistema_de_Inventario
 
 
         }
-        
-        
     }
 
 }

@@ -102,19 +102,6 @@ namespace Sistema_de_Inventario.Clases
             }
         }
 
-        public Boolean Eliminar()
-        {
-            if (conexion.IUD(string.Format("DELETE FROM taller.proveedor WHERE idProveedor={0}", p)))
-            {
-                return true;
-            }
-            else
-            {
-                error = conexion.Error;
-                return false;
-            }
-        }
-
         public Boolean BuscarIdProveedor(string id)
         {
             DataTable t1 = conexion.consulta(string.Format("SELECT idProveedor, RTNProveedor, nombre, telefono, direccion, " +

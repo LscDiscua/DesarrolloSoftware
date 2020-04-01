@@ -33,11 +33,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.txtFacturaProveedor = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cbxProveedor = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -65,6 +60,12 @@
             this.txtNumeroFactura = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cbxProveedor = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtFecha = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtFacturaProveedor = new System.Windows.Forms.TextBox();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -89,7 +90,6 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(965, 493);
             this.label1.TabIndex = 0;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox2
             // 
@@ -158,51 +158,6 @@
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // dtpFecha
-            // 
-            this.dtpFecha.Location = new System.Drawing.Point(89, 15);
-            this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(200, 20);
-            this.dtpFecha.TabIndex = 20;
-            // 
-            // txtFacturaProveedor
-            // 
-            this.txtFacturaProveedor.Location = new System.Drawing.Point(157, 74);
-            this.txtFacturaProveedor.Margin = new System.Windows.Forms.Padding(2);
-            this.txtFacturaProveedor.Name = "txtFacturaProveedor";
-            this.txtFacturaProveedor.Size = new System.Drawing.Size(228, 20);
-            this.txtFacturaProveedor.TabIndex = 38;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(9, 74);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(144, 20);
-            this.label15.TabIndex = 37;
-            this.label15.Text = "FacturaProveedor: ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 15);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 20);
-            this.label2.TabIndex = 35;
-            this.label2.Text = "Fecha : ";
-            // 
-            // cbxProveedor
-            // 
-            this.cbxProveedor.FormattingEnabled = true;
-            this.cbxProveedor.Location = new System.Drawing.Point(91, 106);
-            this.cbxProveedor.Name = "cbxProveedor";
-            this.cbxProveedor.Size = new System.Drawing.Size(148, 21);
-            this.cbxProveedor.TabIndex = 34;
             // 
             // label13
             // 
@@ -492,6 +447,59 @@
             this.dataGridView1.TabIndex = 16;
             this.dataGridView1.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseDoubleClick);
             // 
+            // cbxProveedor
+            // 
+            this.cbxProveedor.FormattingEnabled = true;
+            this.cbxProveedor.Location = new System.Drawing.Point(91, 106);
+            this.cbxProveedor.Name = "cbxProveedor";
+            this.cbxProveedor.Size = new System.Drawing.Size(148, 21);
+            this.cbxProveedor.TabIndex = 34;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(11, 15);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(66, 20);
+            this.label2.TabIndex = 35;
+            this.label2.Text = "Fecha : ";
+            // 
+            // txtFecha
+            // 
+            this.txtFecha.Location = new System.Drawing.Point(583, 95);
+            this.txtFecha.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFecha.Name = "txtFecha";
+            this.txtFecha.Size = new System.Drawing.Size(299, 20);
+            this.txtFecha.TabIndex = 36;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(9, 74);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(144, 20);
+            this.label15.TabIndex = 37;
+            this.label15.Text = "FacturaProveedor: ";
+            // 
+            // txtFacturaProveedor
+            // 
+            this.txtFacturaProveedor.Location = new System.Drawing.Point(157, 74);
+            this.txtFacturaProveedor.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFacturaProveedor.Name = "txtFacturaProveedor";
+            this.txtFacturaProveedor.Size = new System.Drawing.Size(228, 20);
+            this.txtFacturaProveedor.TabIndex = 38;
+            // 
+            // dtpFecha
+            // 
+            this.dtpFecha.Location = new System.Drawing.Point(89, 15);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(200, 20);
+            this.dtpFecha.TabIndex = 20;
+            // 
             // Compras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -499,6 +507,7 @@
             this.BackColor = System.Drawing.Color.Coral;
             this.ClientSize = new System.Drawing.Size(957, 600);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.txtFecha);
             this.Controls.Add(this.txtNumeroFactura);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.dataGridView1);
@@ -561,6 +570,7 @@
         private System.Windows.Forms.ComboBox cbxProveedor;
         private System.Windows.Forms.TextBox txtFacturaProveedor;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txtFecha;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dtpFecha;
     }
