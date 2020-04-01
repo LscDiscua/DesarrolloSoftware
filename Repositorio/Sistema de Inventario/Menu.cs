@@ -12,8 +12,10 @@ namespace Sistema_de_Inventario
 {
     public partial class Menu : Form
     {
+        ClaConexion c;
         public Menu()
         {
+            c = new ClaConexion();
             InitializeComponent();
         }
 
@@ -24,6 +26,7 @@ namespace Sistema_de_Inventario
 
         private void label1_Click(object sender, EventArgs e)
         {
+            
             Inventario form = new Inventario();
             form.Show();
         }
@@ -40,6 +43,7 @@ namespace Sistema_de_Inventario
 
         private void label2_Click(object sender, EventArgs e)
         {
+           
             Compras form = new Compras();
             form.Show();
         }
@@ -56,6 +60,11 @@ namespace Sistema_de_Inventario
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
         {
 
         }

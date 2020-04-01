@@ -74,8 +74,19 @@
     <Compile Include="Categoria.Designer.cs">
       <DependentUpon>Categoria.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClaCompra.cs" />
-    <Compile Include="ClaConexion.cs" />
+    <Compile Include="Clases\ClaCategoria.cs" />
+    <Compile Include="Clases\ClaCompra.cs" />
+    <Compile Include="Clases\ClaConexion.cs" />
+    <Compile Include="Clases\ClaInventario.cs" />
+    <Compile Include="Clases\ClaListaCategorias.cs" />
+    <Compile Include="Clases\ClaListaCompras.cs" />
+    <Compile Include="Clases\ClaListaInventario.cs" />
+    <Compile Include="Clases\ClaListaProductos.cs" />
+    <Compile Include="Clases\ClaListaProveedores.cs" />
+    <Compile Include="Clases\ClaListaVentas.cs" />
+    <Compile Include="Clases\ClaProducto.cs" />
+    <Compile Include="Clases\ClaProveedor.cs" />
+    <Compile Include="Clases\ClaVenta.cs" />
     <Compile Include="Compras.cs">
       <SubType>Form</SubType>
     </Compile>
