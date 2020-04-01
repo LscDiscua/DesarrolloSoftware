@@ -232,7 +232,7 @@ namespace Sistema_de_Inventario.Clases
         {
             ClaConexion NumeroFactura = new ClaConexion();
             // NumeroFactura.ObtenerNumerodeFactura(string.Format("SELECT * FROM taller.encabezadoventa where numeroFactura = (select Max(numeroFactura) from taller.encabezadoventa)"));
-            NumeroFactura.ObtenerNumerodeFactura();
+           // NumeroFactura.ObtenerNumerodeFactura();
         }
 
        
