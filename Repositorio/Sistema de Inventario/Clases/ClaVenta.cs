@@ -159,14 +159,22 @@ namespace Sistema_de_Inventario.Clases
             set { value = fecha; }
         }
 
-        public Boolean Guardar()
+
+        /// <summary>
+        /// Genera un numero autoincremental al abrir una ventana Ventas o al presionar el botón Terminar Venta
+        /// </summary>
+        /// <returns></returns>
+        public Boolean GenerarEncabezado()
         {
+            //inserta en la base de datos el cliente con id 0 "no existe" 
+            //lo que conlleva a que se genere un nuevo id que es lo que necesitamos 
             if (conexion.IUD(string.Format("INSERT INTO encabezadoventa (cliente) value('{0}')", 0)))
             {
                 return true;
             }
             else
             {
+                //en caso de error 
                 error = conexion.Error;
                 return false;
             }
@@ -184,7 +192,10 @@ namespace Sistema_de_Inventario.Clases
                 return false;
             }
         }
+        private void MostrarProductos()
+        {
 
+        }
         public Boolean Modificar()
         {
             if (conexion.IUD(string.Format("UPDATE encabezadoventa SET cliente = '{0}',  fecha = {1}  WHERE numeroFactura = {2}", Cliente, Fecha, NumeroFactura)))
@@ -229,10 +240,15 @@ namespace Sistema_de_Inventario.Clases
         }
 
         public void MostarNumeroEncabezado()
-        {
+        { 
+            //se instancia la clase conexión con el nombre numeroFactura
             ClaConexion NumeroFactura = new ClaConexion();
-            // NumeroFactura.ObtenerNumerodeFactura(string.Format("SELECT * FROM taller.encabezadoventa where numeroFactura = (select Max(numeroFactura) from taller.encabezadoventa)"));
-           // NumeroFactura.ObtenerNumerodeFactura();
+            //se le asigna un valor a encabezado , en este caso la función  obtener factura devuelve n por lo tanto
+            //encabezado = n
+
+             encabezado = NumeroFactura.ObtenerNumerodeFactura(string.Format("SELECT Max(numeroFactura) as numero FROM taller.encabezadoventa"));
+            // se envia un parametro sql con string.Format para ejecutar la consulta
+            //encabezado= NumeroFactura.ObtenerNumerodeFactura();
         }
 
        

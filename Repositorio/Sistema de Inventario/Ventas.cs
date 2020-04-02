@@ -24,10 +24,11 @@ namespace Sistema_de_Inventario
             productos = new Clases.ClaListaProductos();
             ventas = new Clases.ClaListaVentas();
             encabezadoVenta = new Clases.ClaVenta();
-            encabezadoVenta.Guardar();
-            //encabezadoVenta.Fecha = CFecha.Value;
-            txtEncabezadoVenta.Text = encabezadoVenta.Encabezado.ToString();
+            Limpiar();
+            encabezadoVenta.GenerarEncabezado();
             encabezadoVenta.MostarNumeroEncabezado();
+            txtEncabezadoVenta.Text = encabezadoVenta.Encabezado.ToString();
+
         }
 
         private void Limpiar()
@@ -55,12 +56,16 @@ namespace Sistema_de_Inventario
         {
             this.Close();
         }
-
-        private void btnTerminarVenta_Click(object sender, EventArgs e)
+        private void GenerarEncabezado()
         {
             Limpiar();
-            encabezadoVenta.Guardar();
-            
+            encabezadoVenta.GenerarEncabezado();
+            encabezadoVenta.MostarNumeroEncabezado();
+            txtEncabezadoVenta.Text = encabezadoVenta.Encabezado.ToString();
+        }
+        private void btnTerminarVenta_Click(object sender, EventArgs e)
+        {
+            GenerarEncabezado();
         }
     }
 }

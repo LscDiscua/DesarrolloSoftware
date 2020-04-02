@@ -79,71 +79,43 @@ namespace Sistema_de_Inventario
             return t;
         }
 
-        /*public DataTable ObtenerNumerodeFactura(string sql)
-        {
-            DataTable t = new DataTable();
-            conectar();
-            MySqlCommand comando = conexion.CreateCommand();
-            MySqlDataAdapter adptador = new MySqlDataAdapter();
-           
-            try
-            {
-                comando.Connection = conexion;
-                comando.CommandText = sql;
-                adptador.SelectCommand = comando;
-                //adptador.Fill(t);
-              
-                SqlCommand sqlCommand = new SqlCommand(sql );
-                using (SqlDataReader rdr = sqlCommand.ExecuteReader())
-                {
-                    while (rdr.Read())
-                    {
-                        
-                        Clases.ClaVenta venta = new Clases.ClaVenta();
-
-                        venta.Encabezado = Convert.ToInt32(rdr["numeroFactura"]);
-
-                    }
-                }
-            }
-            catch (MySqlException ex)
-            {
-                MessageBox.Show(string.Format("Error: \n{0}", ex.ToString()), "Conexión", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            return t;
-        }*/
-
-        public ClaConexion ObtenerNumerodeFactura()
+      
+        //recibe un comando sql para ejecutarlo
+        //esta seccion de codigo se puede reutilizar para Compras y Ventas ya que es la misma dinámica
+        public int ObtenerNumerodeFactura(string sql)
         {
             ClaConexion numero = new ClaConexion();
-
+            //abrir la conexión
+            conectar();
+            //esta será la variable para enviarla como parámetro
+            int n=0;
             try
             {
                 // Query de selección
-                string sql = @"SELECT * FROM taller.encabezadoventa where numeroFactura = (select Max(numeroFactura) from taller.encabezadoventa";
+                //string sql = @"SELECT Max(numeroFactura) as numero FROM taller.encabezadoventa ";
 
-                // Abrir la conexión
-                conexion.Open();
+
 
                 // Establecer el comando SQL
                 MySqlCommand sqlCommand = new MySqlCommand(sql, conexion);
-
+                //se ejecuta un reader para leer solamamente el campo que queremos
                 using (MySqlDataReader rdr = sqlCommand.ExecuteReader())
                 {
+                    //busca el valor con el número que se necesita
                     while (rdr.Read())
                     {
-                        Clases.ClaVenta venta = new Clases.ClaVenta();
-
-                        venta.Encabezado = Convert.ToInt32(rdr["numeroFactura"]);
+                        //lo almacena dentro de la variable n que es string
+                        n= Convert.ToInt32(rdr["numero"]);
+                        //MessageBox.Show(rdr["numero"].ToString());
                     }
                 }
-                return numero;
-
-                /* Ventas ven = new Ventas();
-                 ven.txtfactura.Text = IdVenta.ToString();*/
+                //retorna n a la funcion dentro d ela clase compra o venta
+                return n;
             }
+            //captura cualquier error que pueda generarse, asi el programa no se detendrá
             catch (Exception ex)
             {
+                return 0;
                 throw ex;
             }
             finally
