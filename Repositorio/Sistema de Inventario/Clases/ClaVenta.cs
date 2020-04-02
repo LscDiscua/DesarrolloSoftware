@@ -192,9 +192,25 @@ namespace Sistema_de_Inventario.Clases
                 return false;
             }
         }
-        private void MostrarProductos()
+        /// <summary>
+        /// Muestra una serie de registros (Detalles de Venta) de la venta actual (encabezado, que es generado al abrir la ventana)
+        /// </summary>
+        /// <returns></returns>
+        public Boolean MostrarFacturacondetalles()
         {
-
+            //selecciona y muestra todos los registros que se tengan insertados en el encabdezado de venta actual
+            DataTable t1 = conexion.consulta(string.Format("SELECT * FROM taller.detalleventa where encabezado = {0}", encabezado));
+            if (t1.Rows.Count > 0)
+            {
+                NumeroFactura = Convert.ToInt32(t1.Rows[0][0].ToString());
+                Cliente = t1.Rows[0][1].ToString();
+                Fecha = Convert.ToDateTime(t1.Rows[0][2].ToString());
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         public Boolean Modificar()
         {
@@ -238,7 +254,9 @@ namespace Sistema_de_Inventario.Clases
                 return false;
             }
         }
-
+        /// <summary>
+        /// Muestra numero de encabezado de Venta (se genera al abrir la ventana)
+        /// </summary>
         public void MostarNumeroEncabezado()
         { 
             //se instancia la clase conexión con el nombre numeroFactura

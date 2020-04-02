@@ -18,21 +18,40 @@ namespace Sistema_de_Inventario
         private Clases.ClaVenta encabezadoVenta;
         public Ventas()
         {
-
+           
             InitializeComponent();
             c = new ClaConexion();
             productos = new Clases.ClaListaProductos();
             ventas = new Clases.ClaListaVentas();
             encabezadoVenta = new Clases.ClaVenta();
+            GenerarEncabezado();
+            Bloqueartxt();
             Limpiar();
-            encabezadoVenta.GenerarEncabezado();
-            encabezadoVenta.MostarNumeroEncabezado();
-            txtEncabezadoVenta.Text = encabezadoVenta.Encabezado.ToString();
 
         }
 
+        /// <summary>
+        /// deja en blanco todos los txt menos el encabezado de Venta
+        /// </summary>
         private void Limpiar()
         {
+            txtTotal.Text = string.Empty;
+            txtBuscarProducto.Text = string.Empty;
+            txtCantidad.Text = string.Empty;
+            txtSubtotal.Text = string.Empty;
+            txtImpuesto.Text = string.Empty;
+            txtCliente.Text = string.Empty;
+            txtProducto.Text = string.Empty;
+        }
+        /// <summary>
+        /// bloquea los txt especificados para que no se pueda modificar su valor manualmente
+        /// </summary>
+        private void Bloqueartxt()
+        {
+            txtEncabezadoVenta.Enabled = false;
+            txtPrecio.Enabled = false;
+            txtSubtotal.Enabled = false;
+            txtTotal.Enabled = false;
 
         }
 
